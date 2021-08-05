@@ -1,0 +1,165 @@
+
+.classic-menu {
+    .menu-item{
+        width: calc(100% / 3 );
+        border-left: 1px solid $line-color;
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 24px 0;
+          
+        }
+    }
+    .border-r{
+      border-right: 1px solid $line-color;
+  
+    }
+    span{
+      color: $secondary;
+      font-weight: 500;
+      font-size: $fz-8;
+    }
+    @include pad{
+      span{
+        font-size: $fz-6;
+      }
+    }
+    @include mobile{
+      .menu-item{
+        a{
+          padding: 5px 0;
+        }
+      }
+      span{
+        font-size: $fz-s;
+      }
+    }
+  }
+  // 選單點擊效果
+  .menu-active{
+    border-bottom: 8px solid $primary;
+    @include mobile{
+      border-bottom: 4px solid $primary;
+    }
+  
+  }
+  .classic-name{
+      font-size: $fz-8;
+      
+  } 
+  // 輪播圖
+.carousel-item{
+    width: 50%;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+ 
+  
+  // 產品列表
+  .product-sun{
+    padding-top: 80px;
+    .h1op{
+      font-size: 42px;
+    }
+    p{
+      font-size: $fz-8;
+    }
+    .product-item{
+      width: calc(100% / 3 - 30px );
+      margin-bottom: 104px;
+      img{
+        width: 100%;
+        height: 164px;
+        object-fit: cover;
+      }
+      .product-name{
+        font-size: $fz-6;
+      }
+      .price{
+        color:$primary;
+      }
+    }
+    @include pad {
+      padding-top: 56px;
+      .h1op{
+        font-size: $fz-8;
+      }
+      p{
+        font-size: $fz-6;
+      }
+      .product-item{
+        width: calc(100% / 2 - 30px );
+        margin-bottom: $fz-18;
+      }
+    }
+    // 手機板
+    @include mobile{
+      padding-top: 32px;
+      .h1op{
+        font-size: $fz-5;
+      }
+      p{
+        font-size: $fz-4;
+        margin-bottom: $mb-5;
+      }
+      .product-item{
+        width: 100%;
+        margin-bottom:$fz-8;
+        .product-name{
+          font-size: $fz-4;
+        }
+      }
+    }
+  }
+  
+  .color-cube {
+    .brown{
+      width: 24px;
+      height: 24px;
+      background-color: $cube-brown;
+      border-radius: 4px;
+      margin-right: 8px;
+    }
+    .orange{
+      width: 24px;
+      height: 24px;
+      background-color: $cube-orange;
+      border-radius: 4px;
+    }
+    @include mobile{
+      .brown,.orange{
+        width: 16px;
+        height: 16px;
+      }   
+    }
+  }
+  .pagination{
+    padding-bottom: 160px;
+    .page-item{
+      padding: 11px 15px;
+      border: 1px solid $border-color;
+      color: $border-color;
+    }
+    .page-active{
+      background-color: $secondary;
+      color: #fff;
+    }
+    .pre,.next{
+      padding: 11px 10px;
+    }
+    .next{
+      background-color: $bg-color;
+    }
+    @include pad{
+      padding-bottom: 96px;
+    }
+    @include mobile{
+      padding-bottom: 56px;
+    }
+  
+  }
+  
+  
