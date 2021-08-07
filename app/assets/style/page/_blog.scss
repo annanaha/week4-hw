@@ -12,27 +12,6 @@
     
 }
 
-.blog-nav{
-    background-color: $blog-color;
-    .nav{
-        padding: 12px 0;
-        a{
-            font-size: $fz-5;
-        }
-    }
-    @include pad{
-        .nav{
-            padding: 16px 0;
-            a{
-                font-size: $fz-4;
-            }
-        }
-    }
-    @include mobile{
-        display: none;
-    }
-       
-}
 .blog-card{
     width: 100%;
 }
@@ -40,7 +19,11 @@
     margin-bottom: 60px;   
     width: 100%;
 }
+.card-link{
+    display: inline-block;
+}
 .blog-img{
+    width: 100%;
     margin-right: 30px;
 }
 .card-content{

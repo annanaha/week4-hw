@@ -48,36 +48,34 @@
   .bg-pink{
     background-color: #AA06010D;
     color: #650300;
+    li{
+      width: 23%;
+    }
+    h4{
+      font-size: 24px;
+    }
+    p{
+      color: #000000;
+      text-align: left;
+    }
   }
   
-  .bg-pink li{
-    width: 23%;
-  }
-  .bg-pink h4{
-    font-size: 24px;
-  }
-  .bg-pink p{
-    color: #000000;
-    text-align: left;
-  }
   .imgbox{
     width: 100%;
     height: 100px;
     justify-content: center;
     align-items: center;
-    
-   
+     
   }
   
   /* 經典系列 */
   .classic img{
     width: 58%;
   }
-  .classic-2{
+  .classic li:nth-child(2n){
     flex-direction: row-reverse;
     text-align: right;
   }
-  
   
   .classic-text{
     width: 42%;
@@ -98,8 +96,8 @@
   }
   /* 聯名設計 */
   .co-branding{
-    
     background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
+    background-position: center;
   }
   .co-branding h2{
     color: #fff;
@@ -137,7 +135,7 @@
   }
   .customer-list{
     width: 23%;
-    height: 460px;
+
     box-shadow: 0px 2px 6px #00000029;
     flex-direction: column;
     border-radius: 4px 4px 0px 0px; 
@@ -165,7 +163,7 @@
     font-size: 20px;
   }
   .contact-wrap{
-    max-width: 760px;
+    max-width: calc(100% / 3 * 2);
     margin: 0 auto;
   }
   .contactus h2{
@@ -201,8 +199,8 @@
     
   }
   .btn-submit{
-    width: 350px;
-    height: 54px;
+    width: 50%;
+    padding: 16px 0;
     background-color:#AA0601;
     border:0;
     color: #fff;
@@ -222,33 +220,36 @@
       padding-top:40px ;
       padding-bottom: 56px;
     }
-    .banner h1{
-      font-size: 48px;
-    }
-    .banner h3{
-      font-size: 20px;
-  
-    }
+    .banner{
+      h1{
+        font-size: 48px;
+      }
+      h3{
+        font-size: 20px;
+    
+      }
+
+    } 
     .h2title{
       font-size: 32px;
     }
-    // .wrap{
-    //   max-width: 690px;
-    // }
+
     .bg-pink ul{
       flex-wrap: wrap;
+      li{
+        width: 48%;
+        margin-bottom: 32px;
+      }
     }
-    .bg-pink li{
-      width: 48%;
-      margin-bottom: 32px;
-    }
-    .classic-2{
+
+    .classic li:nth-child(2n){
       flex-direction: row;
+      img{
+        margin-right: 32px;
+        margin-left: 0;
+      }
     }
-    .classic-2 img{
-      margin-right: 32px;
-      margin-left: 0;
-    }
+    
     .classic li{
       margin-bottom: 8px;
     }
@@ -275,12 +276,15 @@
     .inputbox,textarea{
       height: 36px;
     }
-    .contactus p{
-      font-size: 16px;
-    }
-    .contactus .privacy{
-      font-size: 14px;
-    }
+    .contactus{
+      p{
+        font-size: 16px;
+      }
+      .privacy{
+        font-size: 14px;
+      }
+
+    } 
     .check{
       width: 18px;
       height: 18px;
@@ -294,11 +298,9 @@
       padding-top:32px ;
       padding-bottom: 40px;
     }
-    // .wrap{
-    //   max-width: 375px;
-    // }
     
     .banner{
+      background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true);
       height: 394px;
       h1{
         font-size: 32px;
@@ -324,7 +326,7 @@
         }
       }
     }
-    .classic-2{
+    .classic li:nth-child(2n){
       flex-direction: row;
       img{
         margin-right: 32px;

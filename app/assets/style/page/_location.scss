@@ -89,7 +89,6 @@
         li{
             margin-bottom: 8px;
         }
-       
         a,p{
             font-size: $fz-5;
             color: $text-color2;
@@ -139,7 +138,7 @@
     background-color: #000;
     color: #fff;
     padding: 20px 0;
-    transition: .3s ;
+    display: block;
     &:hover{
         background-color: $primary;
 

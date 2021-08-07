@@ -1,0 +1,21 @@
+.blog-navbar{
+    background-color: $blog-color;
+    .blog-nav{
+        padding: 12px 0;
+        a{
+            font-size: $fz-5;
+            color: #fff;
+            padding-right: 48px;
+        }
+    }
+    @include pad{
+        .blog-nav{
+            padding: 16px 0;
+            a{
+                font-size: $fz-4;
+                padding-right: 32px;
+            }
+        }
+    }
+ 
+}

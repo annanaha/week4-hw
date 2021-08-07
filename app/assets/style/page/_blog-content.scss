@@ -1,31 +1,20 @@
 
-.blog-nav{
-    background-color: $blog-color;
-    .nav{
-        padding: 12px 0;
-        a{
-            font-size: $fz-5;
-        }
-    }
-    @include pad{
-        .nav{
-            padding: 16px 0;
-            a{
-                font-size: $fz-4;
-            }
-        }
-    }
- 
-       
-}
+
+// 麵包屑
 .crumbs-item{
-    padding-right: 8px;
     & + li::before{
         content:"/";
     
     }
     &:last-child a{
         color: $primary;
+
+    }
+    a{
+        padding:0 4px;
+    }
+    &:first-child a{
+        padding-left: 0;
 
     }
 
@@ -150,7 +139,7 @@
         }
     }
     .blog-footer{
-        width: 690px;
+        width: 100%;
     }
 }
 @include mobile{

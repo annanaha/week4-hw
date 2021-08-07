@@ -3,9 +3,9 @@
     margin: 0 auto;
     padding: 0 15px;
     @include pad{
-        max-width: 720px;    
+        max-width: 962px;    
     }
     @include mobile{
-        max-width: 375px;    
+        max-width: 720px;    
     }
 }
